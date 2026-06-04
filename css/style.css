@@ -21,6 +21,12 @@ header {
   background-color: #050e1f1a;
   backdrop-filter: blur(10px);
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 60px;
+  border-top: 2px solid #00c2e02f;
+}
 nav {
   display: flex;
   align-items: center;
