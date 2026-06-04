@@ -1,7 +1,7 @@
 $(function () {
   function loadPage(page) {
     $("#content").fadeOut(200, function () {
-      $(this).load(`./pages/${page}.html`, function () {
+      $(this).load(`/html/pages/${page}.html`, function () {
         $(this).fadeIn(200);
       });
     });
