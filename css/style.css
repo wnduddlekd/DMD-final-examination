@@ -126,7 +126,13 @@ h5 {
   overflow: hidden;
   padding: 150px 0 100px 60px;
   gap: 30px;
-  background: linear-gradient(150deg, #050e1f, #5894dc);
+  background:
+    radial-gradient(
+      ellipse 50% 40% at 20% 80%,
+      rgba(10, 42, 80, 0.8) 0%,
+      transparent 70%
+    ),
+    linear-gradient(160deg, #050e1f, #5894dc);
 }
 .hero-wave {
   position: absolute;
