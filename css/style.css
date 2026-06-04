@@ -1,0 +1,165 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  font-family: "Pretendard", sans-serif;
+  color: #f0ede6;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: #050e1f1a;
+  backdrop-filter: blur(10px);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+a {
+  color: #f0ede6;
+  font-family: "Space Mono", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: transform 0.1s;
+}
+a:hover {
+  color: #00c2e0;
+  background-color: #f0ede626;
+  border-radius: 12px;
+  transform: scale(1.03);
+}
+small {
+  font-size: 16px;
+  display: block;
+}
+p {
+  font-size: 20px;
+}
+h1 {
+  font-size: 140px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h2 {
+  font-size: 80px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h3 {
+  font-size: 56px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h4 {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h5 {
+  color: #8ba6bf;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 9px;
+}
+
+/* Color */
+.main-color {
+  color: #00c2e0;
+}
+.base-1 {
+  color: #f0ede6;
+}
+.base-2 {
+  color: #8ba6bf;
+}
+.base-3 {
+  color: #050e1f;
+}
+
+/* Layout */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Commons */
+.line {
+  height: 0;
+  width: 40px;
+  border: 1px solid #00c2e0;
+}
+.tag {
+  font-family: "Space Mono", sans-serif;
+  color: #00c2e0;
+  padding: 2px 16px;
+}
+.side-text {
+  color: #b4f5ff;
+  font-family: "Space Mono", sans-serif;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.info {
+  line-height: 1.7;
+  border-left: 2px solid #00c2e0;
+  padding: 2px 16px;
+}
+
+/* Home */
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 100px 60px;
+  gap: 30px;
+  background: linear-gradient(150deg, #050e1f, #5894dc);
+}
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+  pointer-events: none;
+}
+.scroll-dot {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(0, 194, 224, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse-ring 2.5s ease-in-out infinite;
+}
+.scroll-dot::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #00c2e0;
+  border-radius: 50%;
+}
+@keyframes pulse-ring {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 194, 224, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 194, 224, 0);
+  }
+}
