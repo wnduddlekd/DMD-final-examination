@@ -4,6 +4,7 @@
 body {
   font-family: "Pretendard", sans-serif;
   color: #f0ede6;
+  background-color: #050e1f;
 }
 header {
   display: flex;
@@ -40,6 +41,7 @@ a:hover {
   transform: scale(1.03);
 }
 small {
+  color: #8ba6bf;
   font-size: 16px;
   display: block;
 }
@@ -116,7 +118,23 @@ h5 {
   border-left: 2px solid #00c2e0;
   padding: 2px 16px;
 }
-
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.con {
+  padding: 60px 0;
+  max-width: 1120px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.con.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Home */
 
 .home-hero {
@@ -168,4 +186,17 @@ h5 {
   50% {
     box-shadow: 0 0 0 8px rgba(0, 194, 224, 0);
   }
+}
+.num-box {
+  position: relative;
+  padding: 70px 50px;
+}
+.num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  color: #00c2e049;
+  font-size: 150px;
+  font-family: "Bebas Neue", sans-serif;
 }
