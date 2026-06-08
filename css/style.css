@@ -41,18 +41,29 @@ nav {
   gap: 8px;
 }
 a {
+  position: relative;
   color: #f0ede6;
   font-family: "Space Mono", sans-serif;
   display: inline-block;
   text-decoration: none;
   padding: 4px 8px;
-  transition: transform 0.1s;
 }
 .a:hover {
   color: #00c2e0;
-  background-color: #f0ede626;
   border-radius: 12px;
-  transform: scale(1.03);
+}
+.a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.a:hover::after {
+  width: 100%;
 }
 small {
   color: #8ba6bf;
