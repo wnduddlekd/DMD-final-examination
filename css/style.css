@@ -149,7 +149,7 @@ h5 {
 
 /* Home */
 
-.home-hero {
+.hero {
   display: flex;
   flex-direction: column;
   position: relative;
