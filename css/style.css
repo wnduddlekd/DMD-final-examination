@@ -69,6 +69,7 @@ small {
   color: #8ba6bf;
   font-size: 16px;
   display: block;
+  line-height: 1.5;
 }
 p {
   font-size: 20px;
@@ -114,6 +115,8 @@ h5 {
 .flex {
   display: flex;
   align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .between {
   display: flex;
@@ -205,16 +208,24 @@ h5 {
   width: 40px;
   border: 1px solid #00c2e0;
 }
+.line-all {
+  height: 0;
+  width: 100%;
+  border: 1px solid #00c2e0;
+  transform: scaleY(0.8);
+}
 .tag {
   font-family: "Space Mono", sans-serif;
   color: #00c2e0;
-  padding: 2px 16px;
+  padding: 2px;
+  white-space: nowrap;
 }
 .side-text {
   color: #b4f5ff;
   font-family: "Space Mono", sans-serif;
   display: inline-block;
   transform: rotate(90deg);
+  white-space: nowrap;
 }
 .info {
   line-height: 1.7;
@@ -282,4 +293,36 @@ h5 {
   color: #00c2e049;
   font-size: 150px;
   font-family: "Bebas Neue", sans-serif;
+}
+
+/* About */
+
+/* Spots */
+.busan-map {
+  max-width: 700px;
+  width: 95%;
+  display: block;
+}
+.district {
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+.district:hover {
+  filter: brightness(1.3) drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+}
+.district.active {
+  filter: brightness(1.4);
+}
+.lbl-kr {
+  font-size: 10px;
+  font-weight: 700;
+  fill: white;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.lbl-en {
+  font-size: 8px;
+  fill: rgba(255, 255, 255, 0.85);
+  text-anchor: middle;
+  pointer-events: none;
 }
