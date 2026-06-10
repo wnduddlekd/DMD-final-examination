@@ -73,6 +73,7 @@ small {
 }
 p {
   font-size: 20px;
+  line-height: 1.5;
 }
 h1 {
   font-size: 140px;
@@ -95,6 +96,12 @@ h5 {
   font-size: 26px;
   font-weight: 300;
   letter-spacing: 9px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Color */
@@ -122,6 +129,12 @@ h5 {
 }
 .between {
   justify-content: space-between;
+}
+.m-50 {
+  margin: 50px;
+}
+.gap-40 {
+  gap: 40px;
 }
 
 /* Slide */
@@ -352,6 +365,36 @@ h5 {
       0 0 10px #0093ab,
       0 0 20px #0093ab;
   }
+}
+
+/* Identity */
+.img-card {
+  border-radius: 28px;
+  max-width: 480px;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .boogi {
+    flex-direction: column;
+  }
+  .img-card {
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    height: 200px;
+  }
+}
+.symbol-img {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: #00c2e02c solid 4px;
+  transition: all 0.4s ease;
+}
+.symbol-img:hover {
+  border: #00c2e0aa solid 4px;
+  transform: scale(1.1);
 }
 
 /* Spots */
