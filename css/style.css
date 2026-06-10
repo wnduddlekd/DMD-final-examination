@@ -114,13 +114,13 @@ h5 {
 /* Layout */
 .flex {
   display: flex;
-  align-items: center;
   gap: 12px;
   margin-bottom: 24px;
 }
-.between {
-  display: flex;
+.center {
   align-items: center;
+}
+.between {
   justify-content: space-between;
 }
 
@@ -303,18 +303,34 @@ h5 {
   margin: 12px;
   margin-right: 40px;
 }
+.year-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 24px;
+}
 .year {
   color: #0093ab;
   font-size: 24px;
   font-family: "Bebas Neue", sans-serif;
-  margin: 32px 24px;
+  line-height: 1;
 }
 .year-dot {
-  width: 6px;
-  height: 6px;
-  border: 3px solid #0093ab;
+  width: 1px;
+  height: 1px;
+  border: 5px solid #0093ab;
   border-radius: 50%;
-  margin-right: 24px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+.year-line {
+  width: 1px;
+  flex: 1;
+  min-height: 80px;
+  background: #00c2e049;
+}
+.flex:last-child .year-line {
+  display: none;
 }
 .glow {
   background-color: #0093ab;
@@ -322,10 +338,8 @@ h5 {
     0 0 5px #0093ab,
     0 0 10px #0093ab,
     0 0 20px rgba(0, 147, 171, 0.6);
-
   animation: glow 2s infinite ease-in-out;
 }
-
 @keyframes glow {
   0%,
   100% {
@@ -333,7 +347,6 @@ h5 {
       0 0 5px #0093ab,
       0 0 10px #0093ab;
   }
-
   50% {
     box-shadow:
       0 0 10px #0093ab,
