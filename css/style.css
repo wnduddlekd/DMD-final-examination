@@ -116,7 +116,7 @@ h5 {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .between {
   display: flex;
@@ -296,6 +296,50 @@ h5 {
 }
 
 /* About */
+.small-num {
+  color: #00c2e049;
+  font-size: 44px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 12px;
+  margin-right: 40px;
+}
+.year {
+  color: #0093ab;
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 32px 24px;
+}
+.year-dot {
+  width: 6px;
+  height: 6px;
+  border: 3px solid #0093ab;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.glow {
+  background-color: #0093ab;
+  box-shadow:
+    0 0 5px #0093ab,
+    0 0 10px #0093ab,
+    0 0 20px rgba(0, 147, 171, 0.6);
+
+  animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 5px #0093ab,
+      0 0 10px #0093ab;
+  }
+
+  50% {
+    box-shadow:
+      0 0 10px #0093ab,
+      0 0 20px #0093ab;
+  }
+}
 
 /* Spots */
 .busan-map {
