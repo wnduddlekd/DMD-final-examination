@@ -70,24 +70,30 @@ small {
   font-size: 16px;
   display: block;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 p {
+  color: #f0ede6;
   font-size: 20px;
   line-height: 1.5;
 }
 h1 {
+  color: #f0ede6;
   font-size: 140px;
   font-family: "Bebas Neue", sans-serif;
 }
 h2 {
+  color: #f0ede6;
   font-size: 80px;
   font-family: "Bebas Neue", sans-serif;
 }
 h3 {
+  color: #f0ede6;
   font-size: 56px;
   font-family: "Bebas Neue", sans-serif;
 }
 h4 {
+  color: #f0ede6;
   font-size: 50px;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -124,11 +130,17 @@ img {
   gap: 12px;
   margin-bottom: 24px;
 }
+.col {
+  flex-direction: column;
+}
 .center {
   align-items: center;
 }
 .between {
   justify-content: space-between;
+}
+.m-8 {
+  margin: 20px;
 }
 .m-50 {
   margin: 50px;
@@ -251,6 +263,10 @@ img {
   align-items: center;
   padding: 0 60px;
 }
+.con-none {
+  max-width: 1120px;
+  width: 100%;
+}
 .con {
   padding: 120px 0;
   max-width: 1120px;
@@ -265,6 +281,15 @@ img {
 }
 .con-spase {
   width: 100px;
+}
+.con2 {
+  padding: 120px 0;
+  max-width: 1900px;
+  width: 100%;
+}
+.con.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Home */
@@ -398,6 +423,23 @@ img {
 }
 
 /* Spots */
+.spot-gallery1 {
+  display: flex;
+  justify-content: space-between;
+}
+.spot-gallery1 > img {
+  max-width: 32%;
+  width: 100%;
+}
+.spot-gallery2 {
+  display: flex;
+}
+.spot-gallery2 > img {
+  max-width: 48%;
+  margin-left: 20px;
+  width: 100%;
+  height: 50%;
+}
 .busan-map {
   max-width: 700px;
   width: 95%;
