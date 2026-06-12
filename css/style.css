@@ -284,7 +284,7 @@ img {
 }
 .con2 {
   padding: 120px 0;
-  max-width: 1900px;
+  max-width: 1200px;
   width: 100%;
 }
 .con.show {
@@ -423,21 +423,74 @@ img {
 }
 
 /* Spots */
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+.img-box img {
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+.img-box:hover img {
+  transform: scale(1.05);
+}
+.img-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+.img-box:hover::before {
+  opacity: 1;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 2;
+  white-space: nowrap;
+}
+.img-box:hover .text {
+  opacity: 1;
+}
+.img-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+.img-box:hover::before {
+  opacity: 1;
+}
+
 .spot-gallery1 {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
 }
-.spot-gallery1 > img {
-  max-width: 32%;
+.img33 {
+  max-width: 33%;
   width: 100%;
 }
 .spot-gallery2 {
   display: flex;
 }
-.spot-gallery2 > img {
-  max-width: 48%;
-  margin-left: 20px;
-  width: 100%;
+.spot-gallery3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
 }
 .busan-map {
   max-width: 700px;
